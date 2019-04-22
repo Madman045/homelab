@@ -7,5 +7,5 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      restart_policy:
-        condition: unless-stopped
+    restart_policy:
+      condition: unless-stopped
