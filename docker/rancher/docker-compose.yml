@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  rancher:
+    image: rancher:latest
+    container_name: 'rancher'
+    ports:
+      - "80:80"
+      - "443:443"
+      restart_policy:
+        condition: unless-stopped
